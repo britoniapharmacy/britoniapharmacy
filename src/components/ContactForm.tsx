@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { Send, Mail, User, MessageSquare, AlertCircle } from 'lucide-react';
+import { Send, Mail, User, MessageSquare, Linkedin } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
@@ -118,156 +118,81 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact" className="bg-gradient-to-b from-white to-green-50 text-gray-900 relative py-[25px]">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <div className="inline-block mb-3 px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">
-            Get In Touch
+    <section id="contact" className="py-16 bg-gray-50">
+      <div className="container mx-auto px-4">
+        <div className="max-w-6xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-12">
+            <p className="text-sm font-medium text-gray-600 mb-2">Get In Touch</p>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Contact Us Today</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Have questions about our pharmaceutical services across Africa? Reach out to our 
+              team and let's discuss how we can help bring your healthcare solutions to life.
+            </p>
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
-            Contact Britonia Pharmacy Ltd
-          </h2>
-          <p className="text-gray-700 text-lg max-w-2xl mx-auto">
-            Ready to expand into African pharmaceutical markets? Our expert team is here to guide you through regulatory requirements, market access strategies, and partnership opportunities.
-          </p>
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-          <div className="bg-white rounded-xl shadow-xl p-8 border border-gray-200">
-            <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                <FormField control={form.control} name="name" render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="text-gray-700">Full Name *</FormLabel>
-                    <div className="relative">
-                      <User className="absolute left-3 top-2.5 h-5 w-5 text-gray-400" />
-                      <FormControl>
-                        <Input placeholder="Your full name" className="pl-10" {...field} />
-                      </FormControl>
-                    </div>
-                    <FormMessage />
-                  </FormItem>
-                )} />
-                
-                <FormField control={form.control} name="email" render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="text-gray-700">Email Address *</FormLabel>
-                    <div className="relative">
-                      <Mail className="absolute left-3 top-2.5 h-5 w-5 text-gray-400" />
-                      <FormControl>
-                        <Input type="email" placeholder="your.email@company.com" className="pl-10" {...field} />
-                      </FormControl>
-                    </div>
-                    <FormMessage />
-                  </FormItem>
-                )} />
 
-                <FormField control={form.control} name="company" render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="text-gray-700">Company/Organization</FormLabel>
-                    <FormControl>
-                      <Input placeholder="Your company name (optional)" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )} />
-
-                <FormField control={form.control} name="subject" render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="text-gray-700">Subject *</FormLabel>
-                    <FormControl>
-                      <Input placeholder="How can we help you?" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )} />
-                
-                <FormField control={form.control} name="message" render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="text-gray-700">Message *</FormLabel>
-                    <div className="relative">
-                      <MessageSquare className="absolute left-3 top-3 h-5 w-5 text-gray-400" />
-                      <FormControl>
-                        <Textarea 
-                          placeholder="Tell us about your pharmaceutical project, regulatory needs, or market expansion plans..." 
-                          className="min-h-[120px] pl-10 resize-none" 
-                          {...field} 
-                        />
-                      </FormControl>
-                    </div>
-                    <FormMessage />
-                  </FormItem>
-                )} />
-                
-                {/* Honeypot field - hidden from real users but bots will fill it */}
-                <FormField control={form.control} name="honeypot" render={({ field }) => (
-                  <FormItem className="hidden">
-                    <FormLabel>Leave this empty</FormLabel>
-                    <FormControl>
-                      <Input {...field} tabIndex={-1} />
-                    </FormControl>
-                  </FormItem>
-                )} />
-                
-                {/* Hidden timestamp field */}
-                <FormField control={form.control} name="timestamp" render={({ field }) => (
-                  <FormItem className="hidden">
-                    <FormControl>
-                      <Input type="hidden" {...field} />
-                    </FormControl>
-                  </FormItem>
-                )} />
-                
-                <button 
-                  type="submit" 
-                  disabled={isSubmitting} 
-                  className="w-full bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-md transition-colors flex items-center justify-center disabled:opacity-70 disabled:cursor-not-allowed"
-                >
-                  {isSubmitting ? "Sending..." : (
-                    <>
-                      Send Message
-                      <Send className="ml-2 h-4 w-4" />
-                    </>
-                  )}
-                </button>
-              </form>
-            </Form>
-          </div>
-          
-          <div className="space-y-8">
-            <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600 mb-4">
-                <Mail className="h-6 w-6" />
+          {/* Contact Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* CEO Card */}
+            <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
+              <div className="text-center">
+                <img 
+                  src="/lovable-uploads/nana-oteng-ceo.png"
+                  alt="Nana Oteng"
+                  className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+                />
+                <h3 className="text-xl font-bold text-gray-900 mb-1">Nana Oteng</h3>
+                <p className="text-gray-600 mb-6">CEO and Founder</p>
+                <div className="space-y-3">
+                  <a 
+                    href="mailto:nana@britoniapharmacy.com" 
+                    className="flex items-center justify-center text-gray-700 hover:text-blue-600 transition-colors"
+                  >
+                    <Mail className="w-5 h-5 mr-2" />
+                    nana@britoniapharmacy.com
+                  </a>
+                  <a 
+                    href="https://www.linkedin.com/in/nana-oteng" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center text-gray-700 hover:text-blue-600 transition-colors"
+                  >
+                    <Linkedin className="w-5 h-5 mr-2" />
+                    LinkedIn Profile
+                  </a>
+                </div>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Email Us</h3>
-              <p className="text-gray-600 mb-2">For all inquiries:</p>
-              <a href="mailto:info@britoniapharmacy.com" className="text-green-600 hover:underline text-lg font-medium">
-                info@britoniapharmacy.com
-              </a>
-              <p className="text-gray-600 mt-3 text-sm">
-                We typically respond within 24 hours during business days.
-              </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mb-4">
-                <AlertCircle className="h-6 w-6" />
+            {/* COO Card */}
+            <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
+              <div className="text-center">
+                <img 
+                  src="/lovable-uploads/emmanuel-kojo-coo.png"
+                  alt="Emmanuel Kojo"
+                  className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+                />
+                <h3 className="text-xl font-bold text-gray-900 mb-1">Emmanuel Kojo</h3>
+                <p className="text-gray-600 mb-6">COO</p>
+                <div className="space-y-3">
+                  <a 
+                    href="mailto:emmanuel@britoniapharmacy.com" 
+                    className="flex items-center justify-center text-gray-700 hover:text-blue-600 transition-colors"
+                  >
+                    <Mail className="w-5 h-5 mr-2" />
+                    emmanuel@britoniapharmacy.com
+                  </a>
+                  <a 
+                    href="https://www.linkedin.com/in/emmanuel-kojo" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center text-gray-700 hover:text-blue-600 transition-colors"
+                  >
+                    <Linkedin className="w-5 h-5 mr-2" />
+                    LinkedIn Profile
+                  </a>
+                </div>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Our Expertise</h3>
-              <ul className="text-gray-600 space-y-2 text-sm">
-                <li>• Malaria drug distribution to government agencies</li>
-                <li>• ARIPO and Madrid Protocol trademark registration</li>
-                <li>• WAHO, AMA, WHO, and ECOWAS regulatory compliance</li>
-                <li>• Pan-African pharmaceutical market access</li>
-                <li>• Supply chain optimization and quality assurance</li>
-              </ul>
-            </div>
-
-            <div className="bg-green-50 p-6 rounded-lg border border-green-200">
-              <h3 className="text-lg font-semibold mb-2 text-green-800">Based in Accra, Ghana</h3>
-              <p className="text-green-700 text-sm">
-                Strategically located in the heart of West Africa, we serve pharmaceutical companies and government agencies across the continent with deep local expertise and international standards.
-              </p>
             </div>
           </div>
         </div>
