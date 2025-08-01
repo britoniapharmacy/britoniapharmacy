@@ -18,6 +18,7 @@ import About from "./pages/About";
 import Careers from "./pages/Careers";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Blog from "./pages/Blog";
+import Resources from "./pages/Resources";
 import BlogPostDetail from "./pages/BlogPostDetail";
 
 const App = () => {
@@ -42,6 +43,7 @@ const App = () => {
             <Route path="/careers" element={<Careers />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/resources" element={<Resources />} />
             <Route path="/blog/:slug" element={<BlogPostDetail />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

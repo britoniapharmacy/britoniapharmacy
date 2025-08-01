@@ -21,10 +21,10 @@ const formSchema = z.object({
 
 type FormValues = z.infer<typeof formSchema>;
 
-// EmailJS configuration - Updated with correct template ID
-const EMAILJS_SERVICE_ID = "service_i3h66xg";
-const EMAILJS_TEMPLATE_ID = "template_fgq53nh"; // Updated to the correct template ID
-const EMAILJS_PUBLIC_KEY = "wQmcZvoOqTAhGnRZ3";
+// EmailJS configuration for Britonia Pharmacy
+const EMAILJS_SERVICE_ID = "service_britonia";
+const EMAILJS_TEMPLATE_ID = "template_britonia_contact";
+const EMAILJS_PUBLIC_KEY = "YOUR_EMAILJS_PUBLIC_KEY"; // Replace with actual key
 
 const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -225,7 +225,7 @@ const ContactForm = () => {
               </div>
               <h3 className="text-xl font-semibold mb-2">Email Us</h3>
               <p className="text-gray-600 mb-2">For general inquiries:</p>
-              <a href="mailto:info@wrlds.com" className="text-blue-500 hover:underline">hello@wrlds.com</a>
+              <a href="mailto:info@britoniapharmacy.com" className="text-blue-500 hover:underline">info@britoniapharmacy.com</a>
               <p className="text-gray-600 mt-2 mb-2">
             </p>
             </div>
