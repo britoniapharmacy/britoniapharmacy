@@ -9,7 +9,7 @@ import SEO from '@/components/SEO';
 
 const Index = () => {
   return (
-    <PageLayout showContact={false}>
+    <PageLayout showContact={true}>
       <SEO 
         title="Britonia Pharmacy Ltd - Leading Pharmaceutical Consultancy in West Africa" 
         description="Britonia Pharmacy Ltd: Your trusted partner for malaria drug distribution, trademark registration, and regulatory services across Africa. Based in Accra, Ghana."
