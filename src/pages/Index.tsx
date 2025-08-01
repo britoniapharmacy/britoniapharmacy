@@ -5,22 +5,11 @@ import Features from '@/components/Features';
 import Projects from '@/components/Projects';
 import WhyWrlds from '@/components/WhyWrlds';
 import BlogPreview from '@/components/BlogPreview';
-import FAQ from '@/components/FAQ';
 import SEO from '@/components/SEO';
-import { useEffect } from 'react';
 
 const Index = () => {
-  // Fix any ID conflicts when the page loads
-  useEffect(() => {
-    const contactElements = document.querySelectorAll('[id="contact"]');
-    if (contactElements.length > 1) {
-      // If there are multiple elements with id="contact", rename one
-      contactElements[1].id = 'contact-footer';
-    }
-  }, []);
-
   return (
-    <PageLayout>
+    <PageLayout showContact={false}>
       <SEO 
         title="Britonia Pharmacy Ltd - Leading Pharmaceutical Consultancy in West Africa" 
         description="Britonia Pharmacy Ltd: Your trusted partner for malaria drug distribution, trademark registration, and regulatory services across Africa. Based in Accra, Ghana."
@@ -32,9 +21,6 @@ const Index = () => {
       <WhyWrlds />
       <Projects />
       <BlogPreview />
-      <div id="faq">
-        <FAQ />
-      </div>
     </PageLayout>
   );
 };
