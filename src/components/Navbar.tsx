@@ -77,32 +77,34 @@ const Navbar = () => {
                     Our Services
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="grid gap-3 p-4 w-[400px]">
-                      <li>
-                        <a href="#features" className="block p-3 space-y-1 rounded-md hover:bg-gray-100" onClick={() => scrollToSection('features')}>
-                          <div className="font-medium">Malaria Drug Sales</div>
-                          <p className="text-sm text-gray-500">Quality ACT drugs for government agencies</p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#features" className="block p-3 space-y-1 rounded-md hover:bg-gray-100" onClick={() => scrollToSection('features')}>
-                          <div className="font-medium">Trademark Registration</div>
-                          <p className="text-sm text-gray-500">ARIPO and Madrid Protocol services</p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#features" className="block p-3 space-y-1 rounded-md hover:bg-gray-100" onClick={() => scrollToSection('features')}>
-                          <div className="font-medium">Regulatory Affairs</div>
-                          <p className="text-sm text-gray-500">WAHO, AMA, WHO, and ECOWAS compliance</p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#features" className="block p-3 space-y-1 rounded-md hover:bg-gray-100" onClick={() => scrollToSection('features')}>
-                          <div className="font-medium">Pan-African Coverage</div>
-                          <p className="text-sm text-gray-500">Comprehensive pharmaceutical consulting</p>
-                        </a>
-                      </li>
-                    </ul>
+                    <div className="bg-white shadow-lg border border-gray-200 rounded-lg z-50">
+                      <ul className="grid gap-3 p-4 w-[400px]">
+                        <li>
+                          <a href="#features" className="block p-3 space-y-1 rounded-md hover:bg-gray-100 transition-colors" onClick={() => scrollToSection('features')}>
+                            <div className="font-medium text-gray-900">Malaria Drug Sales</div>
+                            <p className="text-sm text-gray-500">Quality ACT drugs for government agencies</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#features" className="block p-3 space-y-1 rounded-md hover:bg-gray-100 transition-colors" onClick={() => scrollToSection('features')}>
+                            <div className="font-medium text-gray-900">Trademark Registration</div>
+                            <p className="text-sm text-gray-500">ARIPO and Madrid Protocol services</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#features" className="block p-3 space-y-1 rounded-md hover:bg-gray-100 transition-colors" onClick={() => scrollToSection('features')}>
+                            <div className="font-medium text-gray-900">Regulatory Affairs</div>
+                            <p className="text-sm text-gray-500">WAHO, AMA, WHO, and ECOWAS compliance</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#features" className="block p-3 space-y-1 rounded-md hover:bg-gray-100 transition-colors" onClick={() => scrollToSection('features')}>
+                            <div className="font-medium text-gray-900">Pan-African Coverage</div>
+                            <p className="text-sm text-gray-500">Comprehensive pharmaceutical consulting</p>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
                 
@@ -111,38 +113,40 @@ const Navbar = () => {
                     Customer Cases
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="grid gap-3 p-4 w-[400px]">
-                      <li>
-                        <Link to="/projects/drug-discovery" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Drug Discovery Intelligence</div>
-                          <p className="text-sm text-gray-500">AI-powered pharmaceutical research and development</p>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/projects/supply-chain" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Supply Chain Intelligence</div>
-                          <p className="text-sm text-gray-500">Smart distribution and inventory management</p>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/projects/regulatory-intelligence" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Regulatory Intelligence</div>
-                          <p className="text-sm text-gray-500">Compliance tracking and regulatory analysis</p>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/projects/patient-adherence" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Patient Adherence Intelligence</div>
-                          <p className="text-sm text-gray-500">Treatment monitoring and patient engagement</p>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/projects/quality-intelligence" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Quality Intelligence</div>
-                          <p className="text-sm text-gray-500">Quality assurance and manufacturing optimization</p>
-                        </Link>
-                      </li>
-                    </ul>
+                    <div className="bg-white shadow-lg border border-gray-200 rounded-lg z-50">
+                      <ul className="grid gap-3 p-4 w-[400px]">
+                        <li>
+                          <Link to="/projects/drug-discovery" className="block p-3 space-y-1 rounded-md hover:bg-gray-100 transition-colors">
+                            <div className="font-medium text-gray-900">Drug Discovery Intelligence</div>
+                            <p className="text-sm text-gray-500">AI-powered pharmaceutical research and development</p>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to="/projects/supply-chain" className="block p-3 space-y-1 rounded-md hover:bg-gray-100 transition-colors">
+                            <div className="font-medium text-gray-900">Supply Chain Intelligence</div>
+                            <p className="text-sm text-gray-500">Smart distribution and inventory management</p>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to="/projects/regulatory-intelligence" className="block p-3 space-y-1 rounded-md hover:bg-gray-100 transition-colors">
+                            <div className="font-medium text-gray-900">Regulatory Intelligence</div>
+                            <p className="text-sm text-gray-500">Compliance tracking and regulatory analysis</p>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to="/projects/patient-adherence" className="block p-3 space-y-1 rounded-md hover:bg-gray-100 transition-colors">
+                            <div className="font-medium text-gray-900">Patient Adherence Intelligence</div>
+                            <p className="text-sm text-gray-500">Treatment monitoring and patient engagement</p>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to="/projects/quality-intelligence" className="block p-3 space-y-1 rounded-md hover:bg-gray-100 transition-colors">
+                            <div className="font-medium text-gray-900">Quality Intelligence</div>
+                            <p className="text-sm text-gray-500">Quality assurance and manufacturing optimization</p>
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
                 
@@ -151,26 +155,28 @@ const Navbar = () => {
                     Resources
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="grid gap-3 p-4 w-[400px]">
-                      <li>
-                        <Link to="/resources" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Download Center</div>
-                          <p className="text-sm text-gray-500">Regulatory guides and documentation</p>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/blog" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Blog & Insights</div>
-                          <p className="text-sm text-gray-500">Industry trends and expert analysis</p>
-                        </Link>
-                      </li>
-                      <li>
-                        <a href="#faq" className="block p-3 space-y-1 rounded-md hover:bg-gray-100" onClick={() => scrollToSection('faq')}>
-                          <div className="font-medium">FAQ</div>
-                          <p className="text-sm text-gray-500">Frequently asked questions</p>
-                        </a>
-                      </li>
-                    </ul>
+                    <div className="bg-white shadow-lg border border-gray-200 rounded-lg z-50">
+                      <ul className="grid gap-3 p-4 w-[400px]">
+                        <li>
+                          <Link to="/resources" className="block p-3 space-y-1 rounded-md hover:bg-gray-100 transition-colors">
+                            <div className="font-medium text-gray-900">Download Center</div>
+                            <p className="text-sm text-gray-500">Regulatory guides and documentation</p>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to="/blog" className="block p-3 space-y-1 rounded-md hover:bg-gray-100 transition-colors">
+                            <div className="font-medium text-gray-900">Blog & Insights</div>
+                            <p className="text-sm text-gray-500">Industry trends and expert analysis</p>
+                          </Link>
+                        </li>
+                        <li>
+                          <a href="#faq" className="block p-3 space-y-1 rounded-md hover:bg-gray-100 transition-colors" onClick={() => scrollToSection('faq')}>
+                            <div className="font-medium text-gray-900">FAQ</div>
+                            <p className="text-sm text-gray-500">Frequently asked questions</p>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
                 
@@ -193,47 +199,84 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Navigation Menu - Reduced height and simplified */}
-      <div className={cn("md:hidden transition-all duration-300 overflow-hidden w-full", isMenuOpen ? "max-h-80 opacity-100" : "max-h-0 opacity-0")}>
-        <div className={cn("px-3 pt-2 pb-3 space-y-1 shadow-sm overflow-y-auto max-h-80", isScrolled ? "bg-white" : "bg-black")}>
-          <Link to="/" className={cn("block px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
+      {/* Mobile Navigation Menu */}
+      <div className={cn("md:hidden transition-all duration-300 overflow-hidden w-full", isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0")}>
+        <div className={cn("px-3 pt-2 pb-3 space-y-1 shadow-lg overflow-y-auto max-h-96 border-t", isScrolled ? "bg-white border-gray-200" : "bg-black border-gray-800")}>
+          <Link to="/" className={cn("block px-3 py-2 rounded-md text-sm font-medium", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
             setIsMenuOpen(false);
             window.scrollTo(0, 0);
           }}>
             Home
           </Link>
           
-          <Link to="/about" className={cn("block px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
+          <Link to="/about" className={cn("block px-3 py-2 rounded-md text-sm font-medium", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
             setIsMenuOpen(false);
             window.scrollTo(0, 0);
           }}>
             About Us
           </Link>
           
-          {/* Services link */}
-          <button onClick={() => scrollToSection('features')} className={cn("block w-full text-left px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")}>
-            Our Services
-          </button>
+          {/* Services submenu */}
+          <div className="space-y-1">
+            <div className={cn("px-3 py-2 text-sm font-medium", isScrolled ? "text-gray-700" : "text-gray-200")}>
+              Our Services
+            </div>
+            <div className="ml-4 space-y-1">
+              <button onClick={() => scrollToSection('features')} className={cn("block w-full text-left px-3 py-1 rounded-md text-xs", isScrolled ? "text-gray-600 hover:bg-gray-50" : "text-gray-300 hover:bg-gray-900")}>
+                Malaria Drug Sales
+              </button>
+              <button onClick={() => scrollToSection('features')} className={cn("block w-full text-left px-3 py-1 rounded-md text-xs", isScrolled ? "text-gray-600 hover:bg-gray-50" : "text-gray-300 hover:bg-gray-900")}>
+                Trademark Registration
+              </button>
+              <button onClick={() => scrollToSection('features')} className={cn("block w-full text-left px-3 py-1 rounded-md text-xs", isScrolled ? "text-gray-600 hover:bg-gray-50" : "text-gray-300 hover:bg-gray-900")}>
+                Regulatory Affairs
+              </button>
+            </div>
+          </div>
           
-          <button onClick={() => scrollToSection('projects')} className={cn("block w-full text-left px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")}>
-            Customer Cases
-          </button>
+          {/* Customer Cases submenu */}
+          <div className="space-y-1">
+            <div className={cn("px-3 py-2 text-sm font-medium", isScrolled ? "text-gray-700" : "text-gray-200")}>
+              Customer Cases
+            </div>
+            <div className="ml-4 space-y-1">
+              <Link to="/projects/drug-discovery" className={cn("block px-3 py-1 rounded-md text-xs", isScrolled ? "text-gray-600 hover:bg-gray-50" : "text-gray-300 hover:bg-gray-900")} onClick={() => setIsMenuOpen(false)}>
+                Drug Discovery Intelligence
+              </Link>
+              <Link to="/projects/supply-chain" className={cn("block px-3 py-1 rounded-md text-xs", isScrolled ? "text-gray-600 hover:bg-gray-50" : "text-gray-300 hover:bg-gray-900")} onClick={() => setIsMenuOpen(false)}>
+                Supply Chain Intelligence
+              </Link>
+              <Link to="/projects/regulatory-intelligence" className={cn("block px-3 py-1 rounded-md text-xs", isScrolled ? "text-gray-600 hover:bg-gray-50" : "text-gray-300 hover:bg-gray-900")} onClick={() => setIsMenuOpen(false)}>
+                Regulatory Intelligence
+              </Link>
+              <Link to="/projects/patient-adherence" className={cn("block px-3 py-1 rounded-md text-xs", isScrolled ? "text-gray-600 hover:bg-gray-50" : "text-gray-300 hover:bg-gray-900")} onClick={() => setIsMenuOpen(false)}>
+                Patient Adherence Intelligence
+              </Link>
+              <Link to="/projects/quality-intelligence" className={cn("block px-3 py-1 rounded-md text-xs", isScrolled ? "text-gray-600 hover:bg-gray-50" : "text-gray-300 hover:bg-gray-900")} onClick={() => setIsMenuOpen(false)}>
+                Quality Intelligence
+              </Link>
+            </div>
+          </div>
           
-          <Link to="/resources" className={cn("block px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
-            setIsMenuOpen(false);
-            window.scrollTo(0, 0);
-          }}>
-            Resources
-          </Link>
+          {/* Resources submenu */}
+          <div className="space-y-1">
+            <div className={cn("px-3 py-2 text-sm font-medium", isScrolled ? "text-gray-700" : "text-gray-200")}>
+              Resources
+            </div>
+            <div className="ml-4 space-y-1">
+              <Link to="/resources" className={cn("block px-3 py-1 rounded-md text-xs", isScrolled ? "text-gray-600 hover:bg-gray-50" : "text-gray-300 hover:bg-gray-900")} onClick={() => setIsMenuOpen(false)}>
+                Download Center
+              </Link>
+              <Link to="/blog" className={cn("block px-3 py-1 rounded-md text-xs", isScrolled ? "text-gray-600 hover:bg-gray-50" : "text-gray-300 hover:bg-gray-900")} onClick={() => setIsMenuOpen(false)}>
+                Blog & Insights
+              </Link>
+              <button onClick={() => scrollToSection('faq')} className={cn("block w-full text-left px-3 py-1 rounded-md text-xs", isScrolled ? "text-gray-600 hover:bg-gray-50" : "text-gray-300 hover:bg-gray-900")}>
+                FAQ
+              </button>
+            </div>
+          </div>
           
-          <Link to="/blog" className={cn("block px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
-            setIsMenuOpen(false);
-            window.scrollTo(0, 0);
-          }}>
-            Blog
-          </Link>
-          
-          <button onClick={() => scrollToSection('contact')} className={cn("block w-full text-left px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-gray-700 bg-gray-200 hover:bg-gray-300" : "text-white bg-gray-700 hover:bg-gray-600")}>
+          <button onClick={() => scrollToSection('contact')} className={cn("block w-full text-left px-3 py-2 rounded-md text-sm font-medium mt-2", isScrolled ? "text-white bg-gray-700 hover:bg-gray-800" : "text-black bg-white hover:bg-gray-100")}>
             Contact Us
           </button>
         </div>
