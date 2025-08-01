@@ -18,18 +18,18 @@ const Blog = () => {
     <PageLayout>
       <SEO 
         title="WRLDS - News and insights about smart textile technology" 
-        description="Stay updated with the latest news and insights about sensor-integrated textiles and smart technology from WRLDS Technologies."
+        description="Stay updated with the latest news and insights about pharmaceutical innovation and healthcare solutions from Britonia Pharmacy Ltd."
         imageUrl={featuredPost?.imageUrl || "/lovable-uploads/6b0637e9-4a7b-40d0-b219-c8b7f879f93e.png"}
-        keywords={['smart textiles', 'textile technology', 'industry news', 'sensor innovation', 'wearable tech', 'smart fabrics']}
+        keywords={['pharmaceutical news', 'healthcare innovation', 'drug development', 'regulatory affairs', 'African healthcare', 'pharmaceutical research']}
         type="website"
       />
       
       <div className="w-full pt-24 pb-12 bg-gradient-to-b from-black to-gray-900 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">WRLDS News &amp; Insights</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Britonia Pharmacy News &amp; Insights</h1>
             <p className="text-xl text-gray-300 mb-6">
-              The latest trends and news in sensor-integrated textiles and smart technology
+              The latest trends and developments in pharmaceutical innovation and African healthcare
             </p>
           </div>
         </div>
