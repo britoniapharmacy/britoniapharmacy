@@ -29,7 +29,7 @@ const About = () => {
               transition={{ duration: 0.5 }} 
               className="text-4xl font-bold mb-6"
             >
-              About WRLDS Technologies
+              About Britonia Pharmacy Ltd
             </motion.h1>
             
             <div className="prose prose-lg max-w-none">
@@ -39,7 +39,7 @@ const About = () => {
                 transition={{ duration: 0.5, delay: 0.2 }} 
                 className="text-xl text-gray-600 mb-12"
               >
-                We're a team of innovators dedicated to revolutionizing smart textile technology for industries worldwide.
+                We're a team of pharmaceutical experts dedicated to advancing healthcare solutions across Africa and beyond.
               </motion.p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
@@ -51,12 +51,12 @@ const About = () => {
                 >
                   <h2 className="text-3xl font-bold">Our Mission</h2>
                   <p className="text-gray-600">
-                    At WRLDS Technologies, we're on a mission to transform ordinary textiles into intelligent, 
-                    data-driven solutions that improve safety, performance, and quality of life across industries.
+                    At Britonia Pharmacy Ltd, we're on a mission to revolutionize pharmaceutical access and 
+                    healthcare delivery across Africa through innovative drug development and strategic partnerships.
                   </p>
                   <p className="text-gray-600">
-                    We believe that by embedding intelligence into everyday fabrics, we can create a more 
-                    connected, responsive, and safer world.
+                    We believe that by combining cutting-edge research with local expertise, we can create 
+                    sustainable healthcare solutions that improve lives across the continent.
                   </p>
                 </motion.div>
                 
@@ -70,19 +70,19 @@ const About = () => {
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-gray-700 mt-1 mr-3 flex-shrink-0" />
-                      <span><strong>Innovation:</strong> We push boundaries to create solutions that weren't possible before.</span>
+                      <span><strong>Innovation:</strong> We pioneer new pharmaceutical solutions for African health challenges.</span>
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-gray-700 mt-1 mr-3 flex-shrink-0" />
-                      <span><strong>Quality:</strong> We're committed to excellence in every sensor, algorithm, and solution we deliver.</span>
+                      <span><strong>Quality:</strong> We maintain the highest standards in drug development and manufacturing.</span>
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-gray-700 mt-1 mr-3 flex-shrink-0" />
-                      <span><strong>Collaboration:</strong> We work closely with our clients to ensure their unique needs are met.</span>
+                      <span><strong>Access:</strong> We ensure affordable healthcare reaches every corner of Africa.</span>
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-gray-700 mt-1 mr-3 flex-shrink-0" />
-                      <span><strong>Impact:</strong> We measure success by the tangible differences our technology makes in the real world.</span>
+                      <span><strong>Partnership:</strong> We collaborate with governments and organizations for maximum impact.</span>
                     </li>
                   </ul>
                 </motion.div>
@@ -97,19 +97,19 @@ const About = () => {
                 <h2 className="text-3xl font-bold mb-6">Our Story</h2>
                 <div className="bg-white rounded-xl border border-gray-200 p-8 shadow-sm">
                   <p className="text-gray-600 mb-4">
-                    We started with the ambition to make an inherently scattered and complex development area modular, 
-                    smart and available to analog brands. After successfully raising millions of dollars for development, 
-                    we spent the first two years in full code mode.
+                    Founded with the vision to transform pharmaceutical access across Africa, Britonia Pharmacy Ltd 
+                    began as a response to the critical healthcare gaps in our continent. After securing significant 
+                    funding for research and development, we established state-of-the-art facilities and partnerships.
                   </p>
                   <p className="text-gray-600 mb-4">
-                    The goal was to turn all the scattered hardware and building blocks into simple modules to be 
-                    assembled like Lego. During this time we took in a range of customers for whom we built prototypes - 
-                    a way for us to make sure what we built had bearing in real world use cases.
+                    Our focus has been on developing targeted solutions for tropical diseases, antimalarial drugs, 
+                    and essential medicines. We've worked closely with local health ministries and international 
+                    organizations to ensure our products meet the specific needs of African populations.
                   </p>
                   <p className="text-gray-600">
-                    In 2023 we felt we had reached a technology level allowing us to start working on enterprise level. 
-                    Since then, we have focused on textile integrations because of the enormous potential smart textiles 
-                    have across multiple industries from healthcare to public safety.
+                    Today, we're proud to be a leading pharmaceutical company with a strong presence across West Africa, 
+                    partnerships with major health organizations, and a growing pipeline of innovative treatments that 
+                    address the continent's most pressing health challenges.
                   </p>
                 </div>
               </motion.div>
@@ -122,34 +122,34 @@ const About = () => {
               >
                 <h2 className="text-3xl font-bold mb-6">Our Team</h2>
                 <p className="text-gray-600 mb-8">
-                  Our diverse team combines expertise in textile engineering, electronics, software development, 
-                  artificial intelligence, and industry-specific knowledge to deliver holistic solutions.
+                  Our diverse team combines expertise in pharmaceutical research, regulatory affairs, business development, 
+                  and healthcare innovation to deliver life-changing medicines and solutions.
                 </p>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                   {[
                     {
-                      name: "Felix von Heland",
+                      name: "Nana Oteng",
                       role: "CEO and Founder",
-                      bio: "Leading WRLDS Technologies with a vision to transform the future of smart textiles.",
+                      bio: "Leading Britonia Pharmacy Ltd with a vision to revolutionize healthcare across Africa.",
                       image: "/lovable-uploads/aa5291bd-2417-4c1e-9a02-0bcc71a92507.png"
                     },
                     {
-                      name: "Niek Bijman",
-                      role: "Software Lead",
-                      bio: "Specializing in cloud infrastructure and APIs for seamless data integration.",
+                      name: "Dr. Kwame Asante",
+                      role: "Chief Scientific Officer",
+                      bio: "Leading pharmaceutical research and drug development initiatives across our portfolio.",
                       image: "/lovable-uploads/e502f601-c519-43a8-86f5-5fa89ae50d2f.png"
                     },
                     {
-                      name: "Chengjie Li",
-                      role: "Hardware Lead",
-                      bio: "Expert in embedded systems engineering, leading our hardware development efforts.",
+                      name: "Amina Hassan",
+                      role: "Director of Regulatory Affairs",
+                      bio: "Ensuring compliance with international standards and regulatory frameworks.",
                       image: "/lovable-uploads/3de85ddd-15e1-4216-9697-f91abb9a47ce.png"
                     },
                     {
-                      name: "Love",
+                      name: "Emmanuel Kojo",
                       role: "COO",
-                      bio: "Overseeing daily operations and ensuring business objectives are met effectively.",
+                      bio: "Overseeing operations and strategic partnerships across African markets.",
                       image: "/lovable-uploads/a9bb9110-964a-43b0-a5ab-7162140cd133.png"
                     }
                   ].map((member, i) => (
