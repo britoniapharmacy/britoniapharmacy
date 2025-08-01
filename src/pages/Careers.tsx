@@ -125,7 +125,7 @@ const Careers = () => {
                     <div className="bg-white rounded-xl p-6 border border-gray-200">
                       <div className="flex flex-col items-center text-center">
                         <img 
-                          src="/src/assets/nana-oteng-ceo-professional.jpg"
+                          src="/lovable-uploads/nana-oteng-ceo-professional.jpg"
                           alt="Nana Oteng"
                           className="w-32 h-32 rounded-full mb-4 object-cover grayscale"
                         />

@@ -132,7 +132,7 @@ const About = () => {
                       name: "Nana Oteng",
                       role: "CEO and Founder",
                       bio: "Leading Britonia Pharmacy Ltd with a vision to revolutionize healthcare across Africa.",
-                      image: "/src/assets/nana-oteng-ceo-professional.jpg"
+                      image: "/lovable-uploads/nana-oteng-ceo-professional.jpg"
                     },
                     {
                       name: "Dr. Kwame Asante",
