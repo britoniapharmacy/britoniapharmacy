@@ -7,11 +7,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import FireCatProject from "./pages/FireCatProject";
-import SportRetailProject from "./pages/SportRetailProject";
-import WorkwearProject from "./pages/WorkwearProject";
-import HockeyProject from "./pages/HockeyProject";
-import PetProject from "./pages/PetProject";
+import DrugDiscoveryProject from "./pages/DrugDiscoveryProject";
+import SupplyChainProject from "./pages/SupplyChainProject";
+import RegulatoryIntelligenceProject from "./pages/RegulatoryIntelligenceProject";
+import PatientAdherenceProject from "./pages/PatientAdherenceProject";
+import QualityIntelligenceProject from "./pages/QualityIntelligenceProject";
 import TechDetails from "./pages/TechDetails";
 import DevelopmentProcess from "./pages/DevelopmentProcess";
 import About from "./pages/About";
@@ -32,11 +32,11 @@ const App = () => {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/projects/firecat" element={<FireCatProject />} />
-            <Route path="/projects/sport-retail" element={<SportRetailProject />} />
-            <Route path="/projects/workwear" element={<WorkwearProject />} />
-            <Route path="/projects/hockey" element={<HockeyProject />} />
-            <Route path="/projects/pet-tracker" element={<PetProject />} />
+            <Route path="/projects/drug-discovery" element={<DrugDiscoveryProject />} />
+            <Route path="/projects/supply-chain" element={<SupplyChainProject />} />
+            <Route path="/projects/regulatory-intelligence" element={<RegulatoryIntelligenceProject />} />
+            <Route path="/projects/patient-adherence" element={<PatientAdherenceProject />} />
+            <Route path="/projects/quality-intelligence" element={<QualityIntelligenceProject />} />
             <Route path="/tech-details" element={<TechDetails />} />
             <Route path="/development-process" element={<DevelopmentProcess />} />
             <Route path="/about" element={<About />} />

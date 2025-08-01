@@ -8,52 +8,52 @@ import { useIsMobile } from "@/hooks/use-mobile";
 const projects = [
   {
     id: 1,
-    title: "6th SENSE Safety System",
-    brand: "FireCat Group",
-    description: "AI-driven sensor solution integrated into uniforms for law enforcement, military and firefighters, providing real-time vital monitoring and situational awareness in high-risk environments.",
-    tags: ["Safety", "Military", "AI Sensors", "Real-time Monitoring"],
-    imageUrl: "/lovable-uploads/93ab0638-8190-4ccf-897f-21fda7f4f5ad.png",
+    title: "AI Drug Discovery Platform",
+    brand: "West African Research Institute",
+    description: "Machine learning platform accelerating malaria drug discovery through compound analysis and molecular modeling for faster development of antimalarial treatments.",
+    tags: ["AI", "Drug Discovery", "Malaria", "Machine Learning"],
+    imageUrl: "/lovable-uploads/britonia-malaria-drugs.png",
     isFeatured: true,
-    link: "/projects/firecat",
+    link: "/projects/drug-discovery",
     details: `
-      FireCat Group aimed to enhance safety in high-risk environments. WRLDS Technologies provided the 6th SENSE solution with secure real-time data transmission, high-quality sensors resistant to extreme conditions, integrated AI-powered clothing, and a centralized control unit. Features include Man Down Alarm, GPS positioning, vital sign monitoring, and Panic Button. Benefits: life-saving technology, machine learning preventing false alarms, durable hardware with 7-10 year lifespan, washable sensors, and Plug & Play installation with 12-20 hours of operation per charge.
+      West African Research Institute partnered with Britonia Pharmacy Ltd to develop an AI-powered drug discovery platform. The solution provides accelerated compound screening, molecular modeling for malaria parasites, predictive efficacy analysis, and automated research workflows. Features include AI-driven compound libraries, real-time analysis dashboards, regulatory compliance tracking, and integration with laboratory systems. Benefits: 60% faster drug discovery, reduced development costs, improved success rates, and enhanced collaboration across research teams.
     `
   },
   {
     id: 2,
-    title: "Performance Athletic Footwear",
-    brand: "Global Sports Retail Leader",
-    description: "Smart Footwear R&D aiming to revolutionize development, fitting, and testing of athletic footwear.",
-    tags: ["Sports", "R&D", "Footwear", "Athletic Performance"],
-    imageUrl: "/lovable-uploads/b0622048-17b4-4c75-a3f0-6c9e17de1d09.png",
-    link: "/projects/sport-retail"
+    title: "Intelligent Supply Chain Optimization",
+    brand: "ECOWAS Health Coalition",
+    description: "AI-powered supply chain management system ensuring optimal distribution of essential medicines across West African countries.",
+    tags: ["Supply Chain", "AI", "Distribution", "Healthcare Access"],
+    imageUrl: "/lovable-uploads/ecowas-trademark-success.png",
+    link: "/projects/supply-chain"
   },
   {
     id: 3,
-    title: "Workwear Climate Control",
-    brand: "European Multinational Textile Producer",
-    description: "Fully integrated temperature controls for professionals working in extreme heat and cold. Modular approach to enable full-body systems.",
-    tags: ["Climate Control", "Workwear", "Temperature Regulation", "Extreme Conditions"],
-    imageUrl: "/lovable-uploads/6b0637e9-4a7b-40d0-b219-c8b7f879f93e.png",
-    link: "/projects/workwear"
+    title: "Regulatory Intelligence System",
+    brand: "WAHO Compliance Network",
+    description: "Automated regulatory compliance tracking and reporting system for pharmaceutical products across multiple African regulatory bodies.",
+    tags: ["Regulatory Affairs", "Compliance", "Automation", "Multi-Country"],
+    imageUrl: "/lovable-uploads/waho-compliance-success.png",
+    link: "/projects/regulatory-intelligence"
   },
   {
     id: 4,
-    title: "Ice Hockey Elite Skill Tracker",
-    brand: "Mars Blades",
-    description: "R&D product evaluating data from single IMU embedded in the hockey shoe. Aim: establish motion patterns that lead to ultimate acceleration, speed, and maneuverability.",
-    tags: ["Ice Hockey", "Motion Analysis", "Performance Tracking", "Sports"],
-    imageUrl: "/lovable-uploads/c30e0487-2fa0-41d1-9a0b-699cb2855388.png",
-    link: "/projects/hockey"
+    title: "Patient Adherence Analytics",
+    brand: "Ghana Health Service",
+    description: "Smart monitoring system tracking medication adherence patterns using IoT sensors and mobile apps to improve treatment outcomes.",
+    tags: ["Patient Care", "IoT", "Mobile Health", "Analytics"],
+    imageUrl: "/lovable-uploads/ghana-health-service-partnership.png",
+    link: "/projects/patient-adherence"
   },
   {
     id: 5,
-    title: "Dog Activity Counter",
-    brand: "UK Insurance Giant",
-    description: "R&D project embedding a step counter in a dog collar. Measures daily activity and sends real-time data to the cloud for veterinary consultancies.",
-    tags: ["Pet Technology", "Insurance", "Activity Tracking", "R&D"],
-    imageUrl: "/lovable-uploads/d5ce901e-2ce0-4f2a-bce1-f0ca5d6192df.png",
-    link: "/projects/pet-tracker"
+    title: "Pharmaceutical Quality Intelligence",
+    brand: "ARIPO Member States",
+    description: "AI-driven quality control system providing real-time analysis of pharmaceutical manufacturing processes and product integrity across multiple facilities.",
+    tags: ["Quality Control", "AI", "Manufacturing", "Real-time Analysis"],
+    imageUrl: "/lovable-uploads/aripo-trademark-office.png",
+    link: "/projects/quality-intelligence"
   }
 ];
 
@@ -133,10 +133,10 @@ const Projects = () => {
             Customer Cases
           </div>
           <h2 className="text-3xl font-bold mb-3">
-            From Textile to Intelligence
+            From Research to Intelligence
           </h2>
           <p className="text-gray-600">
-            Explore how our textile sensor technology is revolutionizing multiple industries with intelligent fabric solutions tailored to specific needs.
+            Discover how our pharmaceutical intelligence solutions are transforming healthcare delivery and drug development across Africa with cutting-edge technology and research expertise.
           </p>
           {isMobile && (
             <div className="flex items-center justify-center mt-4 animate-pulse-slow">
