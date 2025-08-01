@@ -47,11 +47,23 @@ const Hero = () => {
   return <motion.div className="relative w-full" initial="hidden" animate="visible" variants={containerVariants}>
       <div className="banner-container bg-black relative overflow-hidden h-[50vh] sm:h-[60vh] md:h-[500px] lg:h-[550px] xl:h-[600px] w-full">
         <div className="absolute inset-0 bg-black w-full">
-          <img 
-            src={britoniaHero}
-            alt="Britonia Pharmacy Ltd - Professional pharmaceutical services in West Africa" 
-            className={`w-full h-full object-cover opacity-70 ${isMobile ? 'object-right' : 'object-center'}`} 
-          />
+          <video 
+            autoPlay 
+            loop 
+            muted 
+            playsInline 
+            preload="metadata"
+            className={`w-full h-full object-cover opacity-70 ${isMobile ? 'object-right' : 'object-center'}`}
+            poster={britoniaHero}
+          >
+            <source src="/lovable-uploads/video_1751292840840_1751292842546.mp4" type="video/mp4" />
+            {/* Fallback image if video fails to load */}
+            <img 
+              src={britoniaHero}
+              alt="Britonia Pharmacy Ltd - Professional pharmaceutical services in West Africa" 
+              className={`w-full h-full object-cover opacity-70 ${isMobile ? 'object-right' : 'object-center'}`} 
+            />
+          </video>
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-white"></div>
         </div>
         

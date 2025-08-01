@@ -40,7 +40,7 @@ export const blogPosts: BlogPost[] = [
     date: 'January 15, 2025',
     author: 'Dr. Felix Britonia',
     category: 'Healthcare',
-    imageUrl: '/lovable-uploads/927dae7e-6aaf-4b76-add2-1287a1dd9dc0.png',
+    imageUrl: '/lovable-uploads/pharmaceutical-research-africa.png',
     keywords: ['malaria treatment', 'ACT drugs', 'West Africa', 'healthcare distribution', 'government partnerships'],
     metaDescription: 'Learn about the challenges and solutions in malaria drug distribution across West Africa, including ACT drugs and government partnerships.',
     content: [
@@ -107,7 +107,7 @@ export const blogPosts: BlogPost[] = [
     date: 'January 10, 2025',
     author: 'Sarah Mensah',
     category: 'Intellectual Property',
-    imageUrl: '/lovable-uploads/078a129e-0f98-4d91-af61-873687db1a04.png',
+    imageUrl: '/lovable-uploads/aripo-trademark-office.png',
     keywords: ['ARIPO', 'trademark registration', 'African market', 'intellectual property', 'pharmaceutical branding'],
     metaDescription: 'Complete guide to ARIPO trademark registration for pharmaceutical companies looking to protect their brands across African markets.',
     content: [
@@ -177,7 +177,7 @@ export const blogPosts: BlogPost[] = [
     date: 'January 5, 2025',
     author: 'Dr. Kwame Asante',
     category: 'Regulatory Affairs',
-    imageUrl: '/lovable-uploads/6b0637e9-4a7b-40d0-b219-c8b7f879f93e.png',
+    imageUrl: '/lovable-uploads/waho-regulatory-meeting.png',
     keywords: ['WAHO', 'pharmaceutical regulation', 'West Africa', 'drug registration', 'regulatory compliance'],
     metaDescription: 'Navigate WAHO regulatory requirements for pharmaceutical approvals in West Africa with our comprehensive compliance guide.',
     content: [
@@ -251,7 +251,7 @@ export const blogPosts: BlogPost[] = [
     date: 'December 28, 2024',
     author: 'Grace Ofosu',
     category: 'Intellectual Property',
-    imageUrl: '/lovable-uploads/5463c9c5-0946-4280-a14b-17636ff69a98.png',
+    imageUrl: '/lovable-uploads/madrid-protocol-international.png',
     keywords: ['Madrid Protocol', 'international trademarks', 'pharmaceutical branding', 'WIPO', 'global protection'],
     metaDescription: 'Learn how to use the Madrid Protocol for international trademark protection in pharmaceutical markets, including African territories.',
     content: [

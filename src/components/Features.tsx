@@ -26,25 +26,25 @@ const Features = () => {
       icon: <Plus className="w-10 h-10 text-white transition-transform duration-300 transform" />,
       title: "Malaria Drug Sales",
       description: "Authorized distribution of quality ACT and other malaria treatment drugs to government agencies across West Africa.",
-      image: "/lovable-uploads/48e540e5-6a25-44e4-b3f7-80f3bfc2777a.png"
+      image: "/lovable-uploads/britonia-malaria-drugs.png"
     },
     {
       icon: <FileText className="w-10 h-10 text-white transition-transform duration-300 transform" />,
       title: "Trademark Registration",
       description: "Comprehensive trademark registration services including ARIPO, Madrid Protocol, and local trademark applications.",
-      image: "/lovable-uploads/48ecf6e2-5a98-4a9d-af6f-ae2265cd4098.png"
+      image: "/lovable-uploads/britonia-trademark-registration.png"
     },
     {
       icon: <Shield className="w-10 h-10 text-white transition-transform duration-300 transform" />,
       title: "Regulatory Services",
       description: "Expert regulatory compliance services for WAHO, AMA, WHO, and ECOWAS pharmaceutical requirements.",
-      image: "/lovable-uploads/cf8966e3-de0d-445f-9fbd-ee6c48daa7ff.png"
+      image: "/lovable-uploads/britonia-regulatory-affairs.png"
     },
     {
       icon: <Globe className="w-10 h-10 text-white transition-transform duration-300 transform" />,
       title: "Pan-African Coverage",
       description: "Comprehensive pharmaceutical consulting services across Africa with deep understanding of local regulations.",
-      image: "/lovable-uploads/6739bd63-bf19-4abd-bb23-0b613bbf7ac8.png"
+      image: "/lovable-uploads/britonia-pan-african-coverage.png"
     }
   ];
 
@@ -109,15 +109,15 @@ const Features = () => {
   }, []);
 
   const successStories = [{
-    image: "/lovable-uploads/843446fe-638e-4efb-b885-ed3cd505325a.png",
+    image: "/lovable-uploads/ghana-health-service-partnership.png",
     title: "Ghana Health Service Partnership",
     description: "Successfully supplied ACT drugs to over 50 health facilities across the Greater Accra Region, improving malaria treatment outcomes."
   }, {
-    image: "/lovable-uploads/5463c9c5-0946-4280-a14b-17636ff69a98.png",
+    image: "/lovable-uploads/ecowas-trademark-success.png",
     title: "ECOWAS Trademark Registration",
     description: "Facilitated international trademark protection for pharmaceutical companies across 15 West African countries through ARIPO."
   }, {
-    image: "/lovable-uploads/c5f8ee24-9815-4ebe-b65d-6f3d449feb8b.png",
+    image: "/lovable-uploads/waho-compliance-success.png",
     title: "WAHO Regulatory Compliance",
     description: "Guided multiple pharmaceutical companies through WAHO regulatory approval processes, ensuring market access across the region."
   }];
