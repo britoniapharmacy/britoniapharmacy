@@ -108,6 +108,46 @@ const Navbar = () => {
                 
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className={cn(isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
+                    Customer Cases
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="grid gap-3 p-4 w-[400px]">
+                      <li>
+                        <Link to="/projects/drug-discovery" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+                          <div className="font-medium">Drug Discovery Intelligence</div>
+                          <p className="text-sm text-gray-500">AI-powered pharmaceutical research and development</p>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/projects/supply-chain" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+                          <div className="font-medium">Supply Chain Intelligence</div>
+                          <p className="text-sm text-gray-500">Smart distribution and inventory management</p>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/projects/regulatory-intelligence" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+                          <div className="font-medium">Regulatory Intelligence</div>
+                          <p className="text-sm text-gray-500">Compliance tracking and regulatory analysis</p>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/projects/patient-adherence" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+                          <div className="font-medium">Patient Adherence Intelligence</div>
+                          <p className="text-sm text-gray-500">Treatment monitoring and patient engagement</p>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/projects/quality-intelligence" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+                          <div className="font-medium">Quality Intelligence</div>
+                          <p className="text-sm text-gray-500">Quality assurance and manufacturing optimization</p>
+                        </Link>
+                      </li>
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+                
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className={cn(isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
                     Resources
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
@@ -173,6 +213,10 @@ const Navbar = () => {
           {/* Services link */}
           <button onClick={() => scrollToSection('features')} className={cn("block w-full text-left px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")}>
             Our Services
+          </button>
+          
+          <button onClick={() => scrollToSection('projects')} className={cn("block w-full text-left px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")}>
+            Customer Cases
           </button>
           
           <Link to="/resources" className={cn("block px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
