@@ -132,25 +132,25 @@ const About = () => {
                       name: "Nana Oteng",
                       role: "CEO and Founder",
                       bio: "Leading Britonia Pharmacy Ltd with a vision to revolutionize healthcare across Africa.",
-                      image: "/lovable-uploads/aa5291bd-2417-4c1e-9a02-0bcc71a92507.png"
+                      image: "/lovable-uploads/nana-oteng-ceo.png"
                     },
                     {
                       name: "Dr. Kwame Asante",
                       role: "Chief Scientific Officer",
                       bio: "Leading pharmaceutical research and drug development initiatives across our portfolio.",
-                      image: "/lovable-uploads/e502f601-c519-43a8-86f5-5fa89ae50d2f.png"
+                      image: "/lovable-uploads/kwame-asante-cso.png"
                     },
                     {
                       name: "Amina Hassan",
                       role: "Director of Regulatory Affairs",
                       bio: "Ensuring compliance with international standards and regulatory frameworks.",
-                      image: "/lovable-uploads/3de85ddd-15e1-4216-9697-f91abb9a47ce.png"
+                      image: "/lovable-uploads/amina-hassan-regulatory.png"
                     },
                     {
                       name: "Emmanuel Kojo",
                       role: "COO",
                       bio: "Overseeing operations and strategic partnerships across African markets.",
-                      image: "/lovable-uploads/a9bb9110-964a-43b0-a5ab-7162140cd133.png"
+                      image: "/lovable-uploads/emmanuel-kojo-coo.png"
                     }
                   ].map((member, i) => (
                     <Card key={i} className="bg-gray-50 border border-gray-100 overflow-hidden">
