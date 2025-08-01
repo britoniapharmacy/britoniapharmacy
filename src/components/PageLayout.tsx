@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import ContactInfo from '@/components/ContactInfo';
+import ContactForm from '@/components/ContactForm';
 import FloatingContactButton from '@/components/FloatingContactButton';
 
 type PageLayoutProps = {
@@ -23,7 +23,7 @@ const PageLayout = ({ children, showContact = true }: PageLayoutProps) => {
     <div className="min-h-screen bg-white w-full max-w-[100vw] overflow-x-hidden">
       <Navbar />
       {children}
-      {showContact && <ContactInfo />}
+      {showContact && <ContactForm />}
       <Footer />
       {showContact && <FloatingContactButton />}
     </div>

@@ -48,7 +48,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
-              <img src="/lovable-uploads/7d120ee6-3614-4b75-9c35-716d54490d67.png" alt="WRLDS Technologies Logo" className={cn("h-8 w-auto", isScrolled ? "" : "brightness-0 invert")} />
+              <img src="/lovable-uploads/aa5291bd-2417-4c1e-9a02-0bcc71a92507.png" alt="Britonia Pharmacy Ltd Logo" className={cn("h-8 w-auto rounded-full", isScrolled ? "" : "brightness-0 invert")} />
             </Link>
           </div>
           
@@ -74,39 +74,33 @@ const Navbar = () => {
                 
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className={cn(isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
-                    Customer Cases
+                    Our Services
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid gap-3 p-4 w-[400px]">
                       <li>
-                        <Link to="/projects/firecat" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">FireCat 6th SENSE</div>
-                          <p className="text-sm text-gray-500">Smart textiles for firefighter safety</p>
-                        </Link>
+                        <a href="#features" className="block p-3 space-y-1 rounded-md hover:bg-gray-100" onClick={() => scrollToSection('features')}>
+                          <div className="font-medium">Malaria Drug Sales</div>
+                          <p className="text-sm text-gray-500">Quality ACT drugs for government agencies</p>
+                        </a>
                       </li>
                       <li>
-                        <Link to="/projects/sport-retail" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Sports Performance</div>
-                          <p className="text-sm text-gray-500">Advanced tracking for athletes</p>
-                        </Link>
+                        <a href="#features" className="block p-3 space-y-1 rounded-md hover:bg-gray-100" onClick={() => scrollToSection('features')}>
+                          <div className="font-medium">Trademark Registration</div>
+                          <p className="text-sm text-gray-500">ARIPO and Madrid Protocol services</p>
+                        </a>
                       </li>
                       <li>
-                        <Link to="/projects/workwear" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Workwear Climate Control</div>
-                          <p className="text-sm text-gray-500">Temperature regulation for extreme environments</p>
-                        </Link>
+                        <a href="#features" className="block p-3 space-y-1 rounded-md hover:bg-gray-100" onClick={() => scrollToSection('features')}>
+                          <div className="font-medium">Regulatory Affairs</div>
+                          <p className="text-sm text-gray-500">WAHO, AMA, WHO, and ECOWAS compliance</p>
+                        </a>
                       </li>
                       <li>
-                        <Link to="/projects/hockey" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Ice Hockey Elite Tracker</div>
-                          <p className="text-sm text-gray-500">Performance tracking for ice hockey</p>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/projects/pet-tracker" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Pet Activity Counter</div>
-                          <p className="text-sm text-gray-500">Smart collars for pet activity monitoring</p>
-                        </Link>
+                        <a href="#features" className="block p-3 space-y-1 rounded-md hover:bg-gray-100" onClick={() => scrollToSection('features')}>
+                          <div className="font-medium">Pan-African Coverage</div>
+                          <p className="text-sm text-gray-500">Comprehensive pharmaceutical consulting</p>
+                        </a>
                       </li>
                     </ul>
                   </NavigationMenuContent>
@@ -114,24 +108,27 @@ const Navbar = () => {
                 
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className={cn(isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
-                    Learn More
+                    Resources
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid gap-3 p-4 w-[400px]">
                       <li>
-                        <Link to="/tech-details" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Technology Details</div>
-                          <p className="text-sm text-gray-500">How our smart textile platform works</p>
+                        <Link to="/resources" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+                          <div className="font-medium">Download Center</div>
+                          <p className="text-sm text-gray-500">Regulatory guides and documentation</p>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/development-process" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Development Process</div>
-                          <p className="text-sm text-gray-500">Our approach to creating custom solutions</p>
+                        <Link to="/blog" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+                          <div className="font-medium">Blog & Insights</div>
+                          <p className="text-sm text-gray-500">Industry trends and expert analysis</p>
                         </Link>
                       </li>
                       <li>
-                        
+                        <a href="#faq" className="block p-3 space-y-1 rounded-md hover:bg-gray-100" onClick={() => scrollToSection('faq')}>
+                          <div className="font-medium">FAQ</div>
+                          <p className="text-sm text-gray-500">Frequently asked questions</p>
+                        </a>
                       </li>
                     </ul>
                   </NavigationMenuContent>
@@ -140,15 +137,15 @@ const Navbar = () => {
                 <NavigationMenuItem>
                   <Link to="/blog">
                     <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
-                      News
+                      Blog
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
                 
                 <NavigationMenuItem>
-                  <Link to="/careers">
+                  <Link to="/about">
                     <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
-                      Careers
+                      About
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
