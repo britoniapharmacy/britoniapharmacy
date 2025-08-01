@@ -27,7 +27,7 @@ const Careers = () => {
                 transition={{ duration: 0.5 }} 
                 className="text-4xl font-bold mb-6"
               >
-                Join Our Team
+                Join Britonia Pharmacy
               </motion.h1>
               
               <div className="prose prose-lg max-w-none">
