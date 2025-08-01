@@ -134,7 +134,7 @@ const ContactForm = () => {
             <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
               <div className="text-center">
                 <img 
-                  src="/lovable-uploads/ceo-professional.jpg"
+                  src="/src/assets/nana-oteng-ceo-professional.jpg"
                   alt="Nana Oteng"
                   className="w-24 h-24 rounded-full mx-auto mb-4 object-cover grayscale"
                 />
