@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Activity, Shield, HardHat, Zap, ArrowRight, Box, Truck, Code, CheckCircle, Rocket, Factory, Microchip, Handshake, RefreshCcw, MessageSquare } from "lucide-react";
+import { FileText, Shield, Globe, Heart, ArrowRight, Box, Truck, Code, CheckCircle, Rocket, Factory, Building, Handshake, RefreshCcw, MessageSquare, Plus, Users } from "lucide-react";
 import { cn } from '@/lib/utils';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -23,27 +23,27 @@ const Features = () => {
 
   const features = [
     {
-      icon: <Activity className="w-10 h-10 text-white transition-transform duration-300 transform" />,
-      title: "Sports Performance",
-      description: "Specialized fabrics that analyze form, provide instant feedback, and help prevent injuries in athletic equipment.",
+      icon: <Plus className="w-10 h-10 text-white transition-transform duration-300 transform" />,
+      title: "Malaria Drug Sales",
+      description: "Authorized distribution of quality ACT and other malaria treatment drugs to government agencies across West Africa.",
       image: "/lovable-uploads/48e540e5-6a25-44e4-b3f7-80f3bfc2777a.png"
     },
     {
-      icon: <Shield className="w-10 h-10 text-white transition-transform duration-300 transform" />,
-      title: "Military & Defense",
-      description: "Tactical gear with embedded sensors for soldier health monitoring, environmental awareness, and enhanced safety.",
+      icon: <FileText className="w-10 h-10 text-white transition-transform duration-300 transform" />,
+      title: "Trademark Registration",
+      description: "Comprehensive trademark registration services including ARIPO, Madrid Protocol, and local trademark applications.",
       image: "/lovable-uploads/48ecf6e2-5a98-4a9d-af6f-ae2265cd4098.png"
     },
     {
-      icon: <HardHat className="w-10 h-10 text-white transition-transform duration-300 transform" />,
-      title: "Industrial Safety",
-      description: "Protective workwear that detects hazards, monitors fatigue, and prevents workplace injuries through early intervention.",
+      icon: <Shield className="w-10 h-10 text-white transition-transform duration-300 transform" />,
+      title: "Regulatory Services",
+      description: "Expert regulatory compliance services for WAHO, AMA, WHO, and ECOWAS pharmaceutical requirements.",
       image: "/lovable-uploads/cf8966e3-de0d-445f-9fbd-ee6c48daa7ff.png"
     },
     {
-      icon: <Zap className="w-10 h-10 text-white transition-transform duration-300 transform" />,
-      title: "Thermal Regulation",
-      description: "Adaptive heating and cooling textiles that respond to body temperature and environmental conditions.",
+      icon: <Globe className="w-10 h-10 text-white transition-transform duration-300 transform" />,
+      title: "Pan-African Coverage",
+      description: "Comprehensive pharmaceutical consulting services across Africa with deep understanding of local regulations.",
       image: "/lovable-uploads/6739bd63-bf19-4abd-bb23-0b613bbf7ac8.png"
     }
   ];
@@ -108,31 +108,31 @@ const Features = () => {
     };
   }, []);
 
-  const sensorCaseStudies = [{
+  const successStories = [{
     image: "/lovable-uploads/843446fe-638e-4efb-b885-ed3cd505325a.png",
-    title: "Firefighter Safety",
-    description: "Advanced protective gear with gas, temperature, positioning, and motion sensors for safer emergency response."
+    title: "Ghana Health Service Partnership",
+    description: "Successfully supplied ACT drugs to over 50 health facilities across the Greater Accra Region, improving malaria treatment outcomes."
   }, {
     image: "/lovable-uploads/5463c9c5-0946-4280-a14b-17636ff69a98.png",
-    title: "Industrial Worker Protection",
-    description: "Safety workwear with vibration, pressure, and heating sensors to prevent injuries and monitor environmental hazards."
+    title: "ECOWAS Trademark Registration",
+    description: "Facilitated international trademark protection for pharmaceutical companies across 15 West African countries through ARIPO."
   }, {
     image: "/lovable-uploads/c5f8ee24-9815-4ebe-b65d-6f3d449feb8b.png",
-    title: "Sports Performance",
-    description: "Smart athletic wear with temperature and pressure sensors that track hydration, foot strike patterns, and performance metrics."
+    title: "WAHO Regulatory Compliance",
+    description: "Guided multiple pharmaceutical companies through WAHO regulatory approval processes, ensuring market access across the region."
   }];
   const stepFlowItems = [{
-    icon: <Microchip className="h-10 w-10 text-gray-700" />,
-    title: "WRLDS Proprietary Modules",
-    description: "Our core technology components developed in-house"
+    icon: <Plus className="h-10 w-10 text-gray-700" />,
+    title: "Quality Pharmaceuticals",
+    description: "Authorized ACT and malaria treatment drugs from certified manufacturers"
   }, {
-    icon: <Factory className="h-10 w-10 text-gray-700" />,
-    title: "Vetted Off-the-Shelf Hardware",
-    description: "Carefully selected components that complement our technology"
+    icon: <Shield className="h-10 w-10 text-gray-700" />,
+    title: "Regulatory Expertise",
+    description: "Deep knowledge of WAHO, AMA, WHO, and ECOWAS requirements"
   }, {
-    icon: <Handshake className="h-10 w-10 text-gray-700" />,
-    title: "Vetted Production Partners",
-    description: "Expert manufacturing partners for quality and reliability"
+    icon: <Globe className="h-10 w-10 text-gray-700" />,
+    title: "Pan-African Network",
+    description: "Established partnerships across African governments and agencies"
   }];
   const sprintPhases = [{
     name: "Planning",
@@ -152,11 +152,12 @@ const Features = () => {
       <section id="features" className="relative bg-white overflow-hidden py-10 md:py-[50px] w-full">
         <div className="w-full px-4 sm:px-6 lg:px-8" ref={featuresRef}> 
           <div className="text-center mb-10 max-w-3xl mx-auto feature-item">
-            <div className="inline-block mb-2 px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
-              Textile Sensor Applications
+            <div className="inline-block mb-2 px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">
+              Our Core Services
             </div>
+            <h2 className="text-3xl font-bold mb-4">Comprehensive Pharmaceutical Solutions</h2>
             <p className="text-gray-600 mt-4">
-              Our textile sensor technology transforms ordinary fabrics into intelligent interfaces that collect data, monitor conditions, and enhance performance across diverse sectors.
+              Britonia Pharmacy Ltd provides end-to-end pharmaceutical consulting services across Africa, specializing in malaria drug distribution, intellectual property protection, and regulatory compliance.
             </p>
           </div>
           
@@ -277,29 +278,29 @@ const Features = () => {
 
           <div className="mt-16 mb-8 feature-item">
             <div className="text-center mb-8">
-              <div className="inline-block mb-2 px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
-                Textile Sensor Applications
+              <div className="inline-block mb-2 px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
+                Success Stories
               </div>
-              <h3 className="text-2xl font-bold">Real-World Use Cases</h3>
+              <h3 className="text-2xl font-bold">Proven Track Record</h3>
               <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
-                Explore how our textile sensors are applied in different professional contexts, 
-                from emergency response to construction and athletics.
-                <span className="block text-sm mt-1 text-blue-500">Scroll horizontally to see more examples →</span>
+                Discover how Britonia Pharmacy Ltd has successfully delivered pharmaceutical solutions across West Africa, 
+                building partnerships with government agencies and regulatory bodies.
+                <span className="block text-sm mt-1 text-green-500">Scroll horizontally to see more success stories →</span>
               </p>
             </div>
             
             <div className="rounded-xl overflow-hidden bg-white p-4 feature-item">
               <Carousel className="w-full max-w-7xl mx-auto">
                 <CarouselContent className="flex">
-                  {sensorCaseStudies.map((study, index) => <CarouselItem key={index} className="md:basis-1/3 flex-shrink-0">
+                  {successStories.map((story, index) => <CarouselItem key={index} className="md:basis-1/3 flex-shrink-0">
                       <Card className="border border-gray-100 shadow-md">
                         <CardContent className="p-0">
                           <div className="w-full h-full">
-                            <img src={study.image} alt={study.title} className="w-full h-auto object-contain" />
+                            <img src={story.image} alt={story.title} className="w-full h-auto object-contain" />
                           </div>
                           <div className="p-4">
-                            <h4 className="font-semibold text-lg">{study.title}</h4>
-                            <p className="text-sm text-gray-600 mt-2">{study.description}</p>
+                            <h4 className="font-semibold text-lg">{story.title}</h4>
+                            <p className="text-sm text-gray-600 mt-2">{story.description}</p>
                           </div>
                         </CardContent>
                       </Card>
@@ -311,7 +312,7 @@ const Features = () => {
                 </div>
               </Carousel>
               <div className="text-center mt-6 text-sm text-gray-600">
-                <p className="font-medium">These examples showcase just a few ways our textile sensors can enhance safety and performance</p>
+                <p className="font-medium">These examples showcase our commitment to improving healthcare outcomes across Africa</p>
               </div>
             </div>
           </div>
@@ -335,10 +336,10 @@ const Features = () => {
             <div className="inline-block mb-2 px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
               Our Approach
             </div>
-            <h2 className="text-3xl font-bold mb-4">How our technology works</h2>
+            <h2 className="text-3xl font-bold mb-4">How We Deliver Excellence</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              WRLDS builds hardware and software with proprietary and off-the-shelf modules, 
-              allowing us to develop completely unique solutions at high speed and lower risk.
+              Britonia Pharmacy Ltd combines local expertise with international standards, 
+              ensuring seamless pharmaceutical distribution and regulatory compliance across Africa.
             </p>
           </div>
           

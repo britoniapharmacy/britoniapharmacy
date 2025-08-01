@@ -1,7 +1,8 @@
-import { ArrowRight, Code, Cpu, Layers, MessageSquare } from "lucide-react";
+import { ArrowRight, Shield, Globe, FileText, MessageSquare, Plus, Heart } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import britoniaLogo from '@/assets/britonia-logo.png';
 
 const Hero = () => {
   const isMobile = useIsMobile();
@@ -68,9 +69,13 @@ const Hero = () => {
         <div className="banner-overlay bg-transparent pt-20 sm:pt-24 md:pt-32 w-full">
           <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center h-full">
             <motion.div className="w-full max-w-4xl text-center" variants={itemVariants}>
-              <motion.h1 className="banner-title text-white" variants={itemVariants}>The Future of Smart Textile Technology is here.</motion.h1>
+              {/* Logo */}
+              <motion.div className="flex justify-center mb-6" variants={itemVariants}>
+                <img src={britoniaLogo} alt="Britonia Pharmacy Ltd" className="h-16 w-16 md:h-20 md:w-20" />
+              </motion.div>
+              <motion.h1 className="banner-title text-white" variants={itemVariants}>Leading Pharmaceutical Consultancy in West Africa</motion.h1>
               <motion.p className="banner-subtitle text-gray-300 mt-4 sm:mt-6" variants={itemVariants}>
-                We integrate AI-powered textile sensors into clothing, footwear, and wearables.
+                Britonia Pharmacy Ltd - Your trusted partner for malaria drug distribution, trademark registration, and regulatory services across Africa. Based in Accra, Ghana.
               </motion.p>
               <motion.div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 sm:mt-8 justify-center items-center" variants={itemVariants}>
                 {/* Styled as a button but using an anchor tag for project navigation */}
@@ -86,7 +91,7 @@ const Hero = () => {
                     }
                   }}
                 >
-                  Explore Projects
+                  Our Services
                   <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
                 </button>
                 
@@ -109,27 +114,27 @@ const Hero = () => {
         delay: 0.6
       }}>
           <motion.div className="bg-white p-4 md:p-5 rounded-xl shadow-sm border border-gray-100 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md" variants={itemVariants}>
-            <div className="w-10 h-10 md:w-12 md:h-12 bg-gray-100 flex items-center justify-center rounded-lg text-gray-500 mb-2 md:mb-3">
-              <Cpu className="w-5 h-5 md:w-6 md:h-6" />
+            <div className="w-10 h-10 md:w-12 md:h-12 bg-green-100 flex items-center justify-center rounded-lg text-green-600 mb-2 md:mb-3">
+              <Plus className="w-5 h-5 md:w-6 md:h-6" />
             </div>
-            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">Smart Textiles</h3>
-            <p className="text-gray-600 text-xs md:text-sm">Intelligent fabric sensors that seamlessly integrate into clothing and footwear.</p>
+            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">Malaria Drug Sales</h3>
+            <p className="text-gray-600 text-xs md:text-sm">Authorized distribution of quality malaria treatment drugs to government agencies across West Africa.</p>
           </motion.div>
           
           <motion.div className="bg-white p-4 md:p-5 rounded-xl shadow-sm border border-gray-100 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md" variants={itemVariants}>
-            <div className="w-10 h-10 md:w-12 md:h-12 bg-gray-100 flex items-center justify-center rounded-lg text-gray-500 mb-2 md:mb-3">
-              <Code className="w-5 h-5 md:w-6 md:h-6" />
+            <div className="w-10 h-10 md:w-12 md:h-12 bg-blue-100 flex items-center justify-center rounded-lg text-blue-600 mb-2 md:mb-3">
+              <FileText className="w-5 h-5 md:w-6 md:h-6" />
             </div>
-            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">Adaptive AI</h3>
-            <p className="text-gray-600 text-xs md:text-sm">Industry-specific algorithms that transform textile sensor data into meaningful insights.</p>
+            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">Trademark Registration</h3>
+            <p className="text-gray-600 text-xs md:text-sm">Comprehensive trademark registration services including ARIPO and Madrid Protocol applications.</p>
           </motion.div>
           
           <motion.div className="bg-white p-4 md:p-5 rounded-xl shadow-sm border border-gray-100 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md" variants={itemVariants}>
-            <div className="w-10 h-10 md:w-12 md:h-12 bg-gray-100 flex items-center justify-center rounded-lg text-gray-500 mb-2 md:mb-3">
-              <Layers className="w-5 h-5 md:w-6 md:h-6" />
+            <div className="w-10 h-10 md:w-12 md:h-12 bg-orange-100 flex items-center justify-center rounded-lg text-orange-600 mb-2 md:mb-3">
+              <Shield className="w-5 h-5 md:w-6 md:h-6" />
             </div>
-            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">Cross-Industry</h3>
-            <p className="text-gray-600 text-xs md:text-sm">Solutions for sports, military, healthcare, industrial, and professional environments.</p>
+            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">Regulatory Services</h3>
+            <p className="text-gray-600 text-xs md:text-sm">Expert regulatory compliance services for WAHO, AMA, WHO, and ECOWAS requirements.</p>
           </motion.div>
         </motion.div>
       </div>
