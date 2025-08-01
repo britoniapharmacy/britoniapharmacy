@@ -296,7 +296,7 @@ const Features = () => {
                       <Card className="border border-gray-100 shadow-md">
                         <CardContent className="p-0">
                           <div className="w-full h-full">
-                            <img src={story.image} alt={story.title} className="w-full h-auto object-contain" />
+                            <img src={story.image} alt={story.title} className="w-full h-auto object-contain grayscale" />
                           </div>
                           <div className="p-4">
                             <h4 className="font-semibold text-lg">{story.title}</h4>
