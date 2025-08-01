@@ -167,7 +167,7 @@ const Projects = () => {
               >
                 <Card className="overflow-hidden h-[500px] border border-gray-100 shadow-sm hover:shadow-md flex flex-col">
                   <div 
-                    className="relative bg-black p-6 flex items-center justify-center h-48 overflow-hidden"
+                    className="relative bg-black p-6 flex items-center justify-center h-48 overflow-hidden grayscale"
                     style={{
                       backgroundImage: `url(${project.imageUrl})`,
                       backgroundSize: 'cover',

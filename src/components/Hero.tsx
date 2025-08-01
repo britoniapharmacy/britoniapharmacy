@@ -53,7 +53,7 @@ const Hero = () => {
             muted 
             playsInline 
             preload="metadata"
-            className={`w-full h-full object-cover opacity-70 ${isMobile ? 'object-right' : 'object-center'}`}
+            className={`w-full h-full object-cover opacity-70 grayscale ${isMobile ? 'object-right' : 'object-center'}`}
             poster={britoniaHero}
           >
             <source src="/lovable-uploads/video_1751292840840_1751292842546.mp4" type="video/mp4" />
@@ -61,7 +61,7 @@ const Hero = () => {
             <img 
               src={britoniaHero}
               alt="Britonia Pharmacy Ltd - Professional pharmaceutical services in West Africa" 
-              className={`w-full h-full object-cover opacity-70 ${isMobile ? 'object-right' : 'object-center'}`} 
+              className={`w-full h-full object-cover opacity-70 grayscale ${isMobile ? 'object-right' : 'object-center'}`} 
             />
           </video>
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-white"></div>
@@ -72,7 +72,7 @@ const Hero = () => {
             <motion.div className="w-full max-w-4xl text-center" variants={itemVariants}>
               {/* Logo */}
               <motion.div className="flex justify-center mb-6" variants={itemVariants}>
-                <img src={britoniaLogo} alt="Britonia Pharmacy Ltd" className="h-16 w-16 md:h-20 md:w-20" />
+                <img src={britoniaLogo} alt="Britonia Pharmacy Ltd" className="h-16 w-16 md:h-20 md:w-20 grayscale" />
               </motion.div>
               <motion.h1 className="banner-title text-white" variants={itemVariants}>Leading Pharmaceutical Consultancy in West Africa</motion.h1>
               <motion.p className="banner-subtitle text-gray-300 mt-4 sm:mt-6" variants={itemVariants}>
