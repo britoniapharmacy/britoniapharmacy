@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { Send, Mail, User, MessageSquare, Linkedin } from 'lucide-react';
+import { Send, Mail, User, MessageSquare, Linkedin, Phone } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { supabase } from '@/integrations/supabase/client';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
@@ -134,19 +134,26 @@ const ContactForm = () => {
             <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
               <div className="text-center">
                 <img 
-                  src="/lovable-uploads/nana-oteng-ceo.png"
+                  src="/lovable-uploads/ceo-professional.jpg"
                   alt="Nana Oteng"
-                  className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+                  className="w-24 h-24 rounded-full mx-auto mb-4 object-cover grayscale"
                 />
                 <h3 className="text-xl font-bold text-gray-900 mb-1">Nana Oteng</h3>
                 <p className="text-gray-600 mb-6">CEO and Founder</p>
                 <div className="space-y-3">
                   <a 
-                    href="mailto:nana@britoniapharmacy.com" 
+                    href="mailto:info@britoniapharmacy.com" 
                     className="flex items-center justify-center text-gray-700 hover:text-blue-600 transition-colors"
                   >
                     <Mail className="w-5 h-5 mr-2" />
-                    nana@britoniapharmacy.com
+                    info@britoniapharmacy.com
+                  </a>
+                  <a 
+                    href="tel:+233244189180" 
+                    className="flex items-center justify-center text-gray-700 hover:text-blue-600 transition-colors"
+                  >
+                    <Phone className="w-5 h-5 mr-2" />
+                    +233 244 189 180
                   </a>
                   <a 
                     href="https://www.linkedin.com/in/nana-oteng" 
@@ -167,17 +174,24 @@ const ContactForm = () => {
                 <img 
                   src="/lovable-uploads/emmanuel-kojo-coo.png"
                   alt="Emmanuel Kojo"
-                  className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+                  className="w-24 h-24 rounded-full mx-auto mb-4 object-cover grayscale"
                 />
                 <h3 className="text-xl font-bold text-gray-900 mb-1">Emmanuel Kojo</h3>
                 <p className="text-gray-600 mb-6">COO</p>
                 <div className="space-y-3">
                   <a 
-                    href="mailto:emmanuel@britoniapharmacy.com" 
+                    href="mailto:info@britoniapharmacy.com" 
                     className="flex items-center justify-center text-gray-700 hover:text-blue-600 transition-colors"
                   >
                     <Mail className="w-5 h-5 mr-2" />
-                    emmanuel@britoniapharmacy.com
+                    info@britoniapharmacy.com
+                  </a>
+                  <a 
+                    href="tel:+233244189180" 
+                    className="flex items-center justify-center text-gray-700 hover:text-blue-600 transition-colors"
+                  >
+                    <Phone className="w-5 h-5 mr-2" />
+                    +233 244 189 180
                   </a>
                   <a 
                     href="https://www.linkedin.com/in/emmanuel-kojo" 

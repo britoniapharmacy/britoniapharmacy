@@ -125,16 +125,20 @@ const Careers = () => {
                     <div className="bg-white rounded-xl p-6 border border-gray-200">
                       <div className="flex flex-col items-center text-center">
                         <img 
-                          src="/lovable-uploads/nana-oteng-ceo.png"
+                          src="/lovable-uploads/ceo-professional.jpg"
                           alt="Nana Oteng"
-                          className="w-32 h-32 rounded-full mb-4 object-cover"
+                          className="w-32 h-32 rounded-full mb-4 object-cover grayscale"
                         />
                         <h3 className="text-xl font-bold text-gray-900">Nana Oteng</h3>
-                        <p className="text-gray-600 mb-4">CEO</p>
+                        <p className="text-gray-600 mb-4">CEO and Founder</p>
                         <div className="flex flex-col space-y-3">
-                          <a href="mailto:careers@britoniapharmacy.com" className="flex items-center text-gray-700 hover:text-blue-600">
+                          <a href="mailto:info@britoniapharmacy.com" className="flex items-center text-gray-700 hover:text-blue-600">
                             <Mail className="w-5 h-5 mr-2" />
-                            careers@britoniapharmacy.com
+                            info@britoniapharmacy.com
+                          </a>
+                          <a href="tel:+233244189180" className="flex items-center text-gray-700 hover:text-blue-600">
+                            <Phone className="w-5 h-5 mr-2" />
+                            +233 244 189 180
                           </a>
                           <a 
                             href="https://www.linkedin.com/company/britonia-pharmacy" 
@@ -144,10 +148,6 @@ const Careers = () => {
                           >
                             <Linkedin className="w-5 h-5 mr-2" />
                             LinkedIn Profile
-                          </a>
-                          <a href="tel:+233244123456" className="flex items-center text-gray-700 hover:text-blue-600">
-                            <Phone className="w-5 h-5 mr-2" />
-                            +233 24 412 3456
                           </a>
                         </div>
                       </div>

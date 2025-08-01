@@ -83,6 +83,12 @@ const Footer = () => {
                   info@britoniapharmacy.com
                 </a>
               </div>
+              <div className="flex items-center text-gray-300">
+                <Phone className="w-4 h-4 mr-2 flex-shrink-0" />
+                <a href="tel:+233244189180" className="hover:text-white transition-colors">
+                  +233 244 189 180
+                </a>
+              </div>
             </div>
           </div>
           
