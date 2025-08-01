@@ -4,6 +4,7 @@ import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Send, Mail, User, MessageSquare, Linkedin } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import { supabase } from '@/integrations/supabase/client';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -75,16 +76,12 @@ const ContactForm = () => {
       const { honeypot, timestamp, ...emailData } = data;
       
       // Send email using Supabase Edge Function
-      const response = await fetch('/api/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(emailData),
+      const { data: responseData, error } = await supabase.functions.invoke('send-email', {
+        body: emailData
       });
       
-      if (!response.ok) {
-        throw new Error('Failed to send email');
+      if (error) {
+        throw new Error(error.message || 'Failed to send email');
       }
       
       console.log('Email sent successfully');
@@ -193,6 +190,155 @@ const ContactForm = () => {
                   </a>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* Contact Form */}
+          <div className="max-w-2xl mx-auto mt-16">
+            <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Send us a message</h3>
+              
+              <Form {...form}>
+                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                  {/* Honeypot field - hidden from users */}
+                  <FormField
+                    control={form.control}
+                    name="honeypot"
+                    render={({ field }) => (
+                      <FormItem className="hidden">
+                        <FormControl>
+                          <Input {...field} tabIndex={-1} autoComplete="off" />
+                        </FormControl>
+                      </FormItem>
+                    )}
+                  />
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <FormField
+                      control={form.control}
+                      name="name"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel className="flex items-center text-sm font-medium text-gray-700">
+                            <User className="w-4 h-4 mr-2" />
+                            Full Name
+                          </FormLabel>
+                          <FormControl>
+                            <Input 
+                              placeholder="Your full name" 
+                              {...field} 
+                              className="border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+                            />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+
+                    <FormField
+                      control={form.control}
+                      name="email"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel className="flex items-center text-sm font-medium text-gray-700">
+                            <Mail className="w-4 h-4 mr-2" />
+                            Email Address
+                          </FormLabel>
+                          <FormControl>
+                            <Input 
+                              type="email" 
+                              placeholder="your.email@company.com" 
+                              {...field} 
+                              className="border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+                            />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                  </div>
+
+                  <FormField
+                    control={form.control}
+                    name="company"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel className="text-sm font-medium text-gray-700">
+                          Company (Optional)
+                        </FormLabel>
+                        <FormControl>
+                          <Input 
+                            placeholder="Your company name" 
+                            {...field} 
+                            className="border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+
+                  <FormField
+                    control={form.control}
+                    name="subject"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel className="flex items-center text-sm font-medium text-gray-700">
+                          <MessageSquare className="w-4 h-4 mr-2" />
+                          Subject
+                        </FormLabel>
+                        <FormControl>
+                          <Input 
+                            placeholder="What would you like to discuss?" 
+                            {...field} 
+                            className="border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+
+                  <FormField
+                    control={form.control}
+                    name="message"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel className="text-sm font-medium text-gray-700">
+                          Message
+                        </FormLabel>
+                        <FormControl>
+                          <Textarea 
+                            placeholder="Tell us about your project, requirements, or any questions you have about our pharmaceutical services across Africa..."
+                            {...field} 
+                            rows={6}
+                            className="border-gray-300 focus:border-blue-500 focus:ring-blue-500 resize-none"
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+
+                  <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors flex items-center justify-center font-medium"
+                  >
+                    {isSubmitting ? (
+                      <div className="flex items-center">
+                        <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
+                        Sending...
+                      </div>
+                    ) : (
+                      <div className="flex items-center">
+                        <Send className="w-4 h-4 mr-2" />
+                        Send Message
+                      </div>
+                    )}
+                  </button>
+                </form>
+              </Form>
             </div>
           </div>
         </div>
