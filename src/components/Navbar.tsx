@@ -170,10 +170,10 @@ const Navbar = () => {
                           </Link>
                         </li>
                         <li>
-                          <a href="#faq" className="block p-3 space-y-1 rounded-md hover:bg-gray-100 transition-colors" onClick={() => scrollToSection('faq')}>
+                          <Link to="/faq" className="block p-3 space-y-1 rounded-md hover:bg-gray-100 transition-colors">
                             <div className="font-medium text-gray-900">FAQ</div>
                             <p className="text-sm text-gray-500">Frequently asked questions</p>
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -270,9 +270,9 @@ const Navbar = () => {
               <Link to="/blog" className={cn("block px-3 py-1 rounded-md text-xs", isScrolled ? "text-gray-600 hover:bg-gray-50" : "text-gray-300 hover:bg-gray-900")} onClick={() => setIsMenuOpen(false)}>
                 Blog & Insights
               </Link>
-              <button onClick={() => scrollToSection('faq')} className={cn("block w-full text-left px-3 py-1 rounded-md text-xs", isScrolled ? "text-gray-600 hover:bg-gray-50" : "text-gray-300 hover:bg-gray-900")}>
+              <Link to="/faq" className={cn("block px-3 py-1 rounded-md text-xs", isScrolled ? "text-gray-600 hover:bg-gray-50" : "text-gray-300 hover:bg-gray-900")} onClick={() => setIsMenuOpen(false)}>
                 FAQ
-              </button>
+              </Link>
             </div>
           </div>
           
