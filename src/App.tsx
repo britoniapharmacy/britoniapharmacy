@@ -2,9 +2,11 @@
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from "react";
+import { AiSidebar } from "@/components/AiSidebar";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import DrugDiscoveryProject from "./pages/DrugDiscoveryProject";
@@ -31,24 +33,39 @@ const App = () => {
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/projects/drug-discovery" element={<DrugDiscoveryProject />} />
-            <Route path="/projects/supply-chain" element={<SupplyChainProject />} />
-            <Route path="/projects/regulatory-intelligence" element={<RegulatoryIntelligenceProject />} />
-            <Route path="/projects/patient-adherence" element={<PatientAdherenceProject />} />
-            <Route path="/projects/quality-intelligence" element={<QualityIntelligenceProject />} />
-            <Route path="/tech-details" element={<TechDetails />} />
-            <Route path="/development-process" element={<DevelopmentProcess />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/careers" element={<Careers />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/faq" element={<FAQ />} />
-            <Route path="/resources" element={<Resources />} />
-            <Route path="/blog/:slug" element={<BlogPostDetail />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
+          <SidebarProvider>
+            <div className="min-h-screen flex w-full">
+              <AiSidebar />
+              <main className="flex-1">
+                <header className="h-12 flex items-center border-b px-4">
+                  <SidebarTrigger className="mr-2" />
+                  <h1 className="text-sm font-medium text-muted-foreground">
+                    Britonia Pharmacy Ltd
+                  </h1>
+                </header>
+                <div className="flex-1">
+                  <Routes>
+                    <Route path="/" element={<Index />} />
+                    <Route path="/projects/drug-discovery" element={<DrugDiscoveryProject />} />
+                    <Route path="/projects/supply-chain" element={<SupplyChainProject />} />
+                    <Route path="/projects/regulatory-intelligence" element={<RegulatoryIntelligenceProject />} />
+                    <Route path="/projects/patient-adherence" element={<PatientAdherenceProject />} />
+                    <Route path="/projects/quality-intelligence" element={<QualityIntelligenceProject />} />
+                    <Route path="/tech-details" element={<TechDetails />} />
+                    <Route path="/development-process" element={<DevelopmentProcess />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/careers" element={<Careers />} />
+                    <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                    <Route path="/blog" element={<Blog />} />
+                    <Route path="/faq" element={<FAQ />} />
+                    <Route path="/resources" element={<Resources />} />
+                    <Route path="/blog/:slug" element={<BlogPostDetail />} />
+                    <Route path="*" element={<NotFound />} />
+                  </Routes>
+                </div>
+              </main>
+            </div>
+          </SidebarProvider>
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
