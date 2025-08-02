@@ -35,7 +35,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Send notification email to info@britoniapharmacy.com
     const notificationEmail = await resend.emails.send({
-      from: "Britonia Pharmacy <onboarding@resend.dev>",
+      from: "Britonia Pharmacy <noreply@britoniapharmacy.com>",
       to: ["info@britoniapharmacy.com"],
       subject: `New Contact Form Submission: ${subject}`,
       html: `
@@ -61,7 +61,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Send auto-response to the user
     const autoResponse = await resend.emails.send({
-      from: "Britonia Pharmacy <onboarding@resend.dev>",
+      from: "Britonia Pharmacy <noreply@britoniapharmacy.com>",
       to: [email],
       subject: "Thank you for contacting Britonia Pharmacy Ltd",
       html: `
