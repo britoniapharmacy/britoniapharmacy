@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { Bot, Send, Mic, MicOff, Volume2, VolumeX } from "lucide-react";
+import { Bot, Send, Mic, MicOff, Volume2, VolumeX, Home, Info, Briefcase, BookOpen, FileText } from "lucide-react";
 import { NavLink, useLocation } from "react-router-dom";
 import {
   Sidebar,
@@ -26,11 +26,11 @@ interface Message {
 }
 
 const navigationItems = [
-  { title: "Home", url: "/", icon: Bot },
-  { title: "About", url: "/about", icon: Bot },
-  { title: "Projects", url: "/projects", icon: Bot },
-  { title: "Blog", url: "/blog", icon: Bot },
-  { title: "Resources", url: "/resources", icon: Bot },
+  { title: "Home", url: "/", icon: Home },
+  { title: "About", url: "/about", icon: Info },
+  { title: "Blog", url: "/blog", icon: BookOpen },
+  { title: "Resources", url: "/resources", icon: FileText },
+  { title: "FAQ", url: "/faq", icon: Briefcase },
 ];
 
 export function AiSidebar() {
@@ -64,9 +64,6 @@ export function AiSidebar() {
     scrollToBottom();
   }, [messages]);
 
-  const isActive = (path: string) => currentPath === path;
-  const getNavCls = ({ isActive }: { isActive: boolean }) =>
-    isActive ? "bg-muted text-primary font-medium" : "hover:bg-muted/50";
 
   const sendMessage = async (text: string) => {
     if (!text.trim()) return;
@@ -167,8 +164,6 @@ export function AiSidebar() {
       className={collapsed ? "w-14" : "w-80"}
       collapsible="icon"
     >
-      <SidebarTrigger className="m-2 self-end" />
-
       <SidebarContent>
         {/* Navigation Section */}
         <SidebarGroup>
@@ -178,7 +173,13 @@ export function AiSidebar() {
               {navigationItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
-                    <NavLink to={item.url} end className={getNavCls}>
+                    <NavLink 
+                      to={item.url} 
+                      end 
+                      className={({ isActive }) => 
+                        isActive ? "flex items-center bg-muted text-primary font-medium px-2 py-1 rounded" : "flex items-center hover:bg-muted/50 px-2 py-1 rounded"
+                      }
+                    >
                       <item.icon className="mr-2 h-4 w-4" />
                       {!collapsed && <span>{item.title}</span>}
                     </NavLink>
