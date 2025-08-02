@@ -22,6 +22,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Blog from "./pages/Blog";
 import Resources from "./pages/Resources";
 import BlogPostDetail from "./pages/BlogPostDetail";
+import ClientPortal from "./pages/ClientPortal";
 
 const App = () => {
   const [queryClient] = useState(() => new QueryClient());
@@ -48,8 +49,9 @@ const App = () => {
             <Route path="/faq" element={<FAQ />} />
             <Route path="/resources" element={<Resources />} />
             <Route path="/blog/:slug" element={<BlogPostDetail />} />
-            <Route path="/mvp-overview" element={<MVPOverview />} />
-            <Route path="*" element={<NotFound />} />
+          <Route path="/mvp-overview" element={<MVPOverview />} />
+          <Route path="/client-portal" element={<ClientPortal />} />
+          <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
       </TooltipProvider>
