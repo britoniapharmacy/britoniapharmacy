@@ -20,6 +20,11 @@ import {
   CreditCard
 } from 'lucide-react';
 import PortalNavigation from './PortalNavigation';
+import RegulatoryModule from './modules/RegulatoryModule';
+import TrademarkModule from './modules/TrademarkModule';
+import DocumentVault from './modules/DocumentVault';
+import UserAccessModule from './modules/UserAccessModule';
+import BillingModule from './modules/BillingModule';
 
 interface ClientDashboardProps {
   user: User;
@@ -188,9 +193,15 @@ const ClientDashboard = ({ user }: ClientDashboardProps) => {
             </>
           )}
 
-          {activeModule !== 'dashboard' && (
+          {activeModule === 'regulatory' && <RegulatoryModule />}
+          {activeModule === 'trademark' && <TrademarkModule />}
+          {activeModule === 'documents' && <DocumentVault />}
+          {activeModule === 'users' && <UserAccessModule />}
+          {activeModule === 'billing' && <BillingModule />}
+          
+          {activeModule === 'settings' && (
             <div className="text-center py-12">
-              <h2 className="text-2xl font-bold mb-4">{activeModule.charAt(0).toUpperCase() + activeModule.slice(1)} Module</h2>
+              <h2 className="text-2xl font-bold mb-4">Settings Module</h2>
               <p className="text-muted-foreground">This module is under development and will be available soon.</p>
             </div>
           )}
