@@ -5,7 +5,6 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ContactForm from '@/components/ContactForm';
 import FloatingContactButton from '@/components/FloatingContactButton';
-import { AiChatWidget } from '@/components/AiChatWidget';
 
 type PageLayoutProps = {
   children: React.ReactNode;
@@ -27,7 +26,6 @@ const PageLayout = ({ children, showContact = true }: PageLayoutProps) => {
       {showContact && <ContactForm />}
       <Footer />
       {showContact && <FloatingContactButton />}
-      <AiChatWidget />
     </div>
   );
 };
