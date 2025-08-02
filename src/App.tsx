@@ -12,6 +12,7 @@ import SupplyChainProject from "./pages/SupplyChainProject";
 import RegulatoryIntelligenceProject from "./pages/RegulatoryIntelligenceProject";
 import PatientAdherenceProject from "./pages/PatientAdherenceProject";
 import QualityIntelligenceProject from "./pages/QualityIntelligenceProject";
+import MVPOverview from "./pages/MVPOverview";
 import TechDetails from "./pages/TechDetails";
 import DevelopmentProcess from "./pages/DevelopmentProcess";
 import About from "./pages/About";
@@ -47,6 +48,7 @@ const App = () => {
             <Route path="/faq" element={<FAQ />} />
             <Route path="/resources" element={<Resources />} />
             <Route path="/blog/:slug" element={<BlogPostDetail />} />
+            <Route path="/mvp-overview" element={<MVPOverview />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
